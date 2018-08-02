@@ -1,0 +1,19 @@
+First and formost use a non-priviledged account - NOT ROOT!!
+
+I tend to use the user tos (Telos Operational Signer) and has home directory of /data
+
+So as user tos:
+mkdir {NewStage}
+cd NewStage
+gitclone https://github.com/Telos-Foundation/telos --recursive
+cd telos
+git checkout (current tag)
+./telos_buils.sh
+cd build make
+cd ../..
+mkdir nodeos (or your producer name, etc)
+I then copy ..{OldStage}/config.ini nodeos/
+cd nodeos
+edit config.ini to change ports for this stage and point p2p to this stage endpoints
+download new genesis.json file
+./start.sh
