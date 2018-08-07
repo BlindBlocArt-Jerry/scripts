@@ -1,3 +1,6 @@
+#########################################################################################
+###### CAUTION !! These are only to be used on a testnet NEVER on production!!!! ########
+#########################################################################################
 # scripts
 These are useful scripts for controlling TLOS nodes anything in {} needs to be changed to your config
 
